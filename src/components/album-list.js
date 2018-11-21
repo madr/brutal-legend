@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Album from "./album";
+import Album from './album';
 
 export default class AlbumList extends Component {
-    componentWillMount() {
-        this.props.loadAlbumData();
-    }
     render() {
         const {
             albums,
