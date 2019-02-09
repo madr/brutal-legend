@@ -1,4 +1,4 @@
-import {SET_SORT_KEY} from '../actions';
+import { SET_SORT_KEY } from '../actions';
 
 export default (state = 'id', action) => {
     switch (action.type) {

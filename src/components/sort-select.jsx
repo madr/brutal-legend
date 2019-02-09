@@ -4,7 +4,7 @@ export default class SortSelect extends Component {
     render() {
         const { value, handleOnChange } = this.props;
         return (
-            <div>
+            <div hidden>
                 <label htmlFor="sortBy">Sortera efter</label>
                 <select
                     id="sortBy"

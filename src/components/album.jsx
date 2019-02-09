@@ -11,7 +11,7 @@ export default class Album extends Component {
             img,
             purchased_on,
         } = this.props;
-        const imagePath = `/assets/covers/${img}`;
+        const imagePath = `assets/covers/${img}`;
         const song = songs.join(', ');
         return (
             <article>
