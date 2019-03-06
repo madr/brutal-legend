@@ -4,7 +4,7 @@ export default class FilterInput extends Component {
     render() {
         const {
             value,
-            handleOnChange
+            handleOnChange,
         } = this.props;
         return (
             <div>
