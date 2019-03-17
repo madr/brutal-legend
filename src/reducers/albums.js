@@ -177,5 +177,16 @@ export default () => {
         "year": 1982,
         "description": "Motörhead bildades 1975 och var aktivt fram tills att dess frontman Lemmy Kilmister, en sann kultklenod inom hårdrocken, gick bort 2015. Det är ingen tillfällighet att så många låtar av Motörhead är med i ett spel som Brütal Legend.\n\n\"Ace of Spades\" är den fjärde skivan och inledde Motörheads 1980-tal. Jag förknippade den tidigare med dess titelspår, men (We Are) The Roadcrew, en låt som skrevs för att särskilt hylla bandets roadies, är mycket passande till spelets berättelse.\n\nDet tidlösa omslaget är någon sorts variant av spaghetti-western med skinnställ.",
         "img": "15.jpg"
+    },{
+        "id": 16,
+        "purchased_on": "2019-03-16",
+        "artist": "Angel Witch",
+        "songs": [
+            "Angel Witch"
+        ],
+        "title": "Angel Witch",
+        "year": 1980,
+        "description": "Brittiska Angel Witch var en del av NWOBHM-vågen och bildades 1979. Efter 3 album på tidigt 1980-tal splittrades och återförenades bandet några gånger, med nya medlemmar utöver dess sångare som också är huvudsaklig kompositör och manager. De är har idag många tunga erkännanden och håller fortfarande igång, med den fjärde skivan släppt 2012.\n\nOmslaget är demoniskt och sataniskt, vilket passar mycket bra i vinylformatet.",
+        "img": "16.jpg"
     }];
 };
