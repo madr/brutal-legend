@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 export default class Album extends Component {
     render() {
+        const { album, handleOnClick } = this.props
         const {
             id,
             artist,
@@ -10,11 +11,11 @@ export default class Album extends Component {
             year,
             img,
             purchased_on,
-        } = this.props;
+        } = album;
         const imagePath = `assets/covers/${img}`;
         const song = songs.join(', ');
         return (
-            <article>
+            <article onClick={() => handleOnClick(album)}>
                 <figure>
                     <img src={imagePath} alt="cover" />
                 </figure>

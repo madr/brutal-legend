@@ -5,11 +5,18 @@ export default class AlbumList extends Component {
     render() {
         const {
             albums,
+            handleOnClick,
+            blurred,
         } = this.props;
+        const classNames = blurred ? 'blur' : ''
         return (
-            <div id="albums">
+            <div id="albums" className={classNames}>
                 {albums.map(album => (
-                    <Album key={album.id} {...album} />
+                    <Album
+                        key={album.id}
+                        album={album}
+                        handleOnClick={handleOnClick} 
+                    />
                 ))}
             </div>
         );
