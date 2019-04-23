@@ -1,4 +1,4 @@
-import "babel-polyfill";
+import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -29,4 +29,4 @@ render(
     document.getElementById('brutal')
 );
 
-store.dispatch({ type: 'LOAD_ALBUMS', payload: { source: '/json/albums.json' }});
+store.dispatch({ type: 'LOAD_ALBUMS', payload: { source: 'json/albums.json' }});

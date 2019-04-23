@@ -1,4 +1,10 @@
-# Getting started
+# BRÜTAL LEGEND
+
+Progress visualisation of the quest to own a vinyl copy of all songs older than 1990 used in [Brütal Legend](https://en.wikipedia.org/wiki/Br%C3%BCtal_Legend), where possible.
+
+Also a project for learning CSS Grid layout, React, Redux and Redux-sagas.
+
+## Getting started
 
 Install dependencies and start webpack watcher.
 
@@ -7,8 +13,6 @@ Install dependencies and start webpack watcher.
 
 in another terminal, start a web server using python.
 
-    python2 -m 'SimpleHTTPServer' 1337
-    # or
-    python3 -m 'http.server' 1337
+    npm run serve
     
-Visit site on http://localhost:1337
+Visit site on http://localhost:10667

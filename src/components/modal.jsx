@@ -18,15 +18,15 @@ export default class Modal extends Component {
         const imagePath = `assets/covers/${img}`;
         const song = songs.join(', ');
         return (
-            <div id="selected-album" tabIndex="0" onClick={handleOnClick}>
-                <div>
-                    <figure>
-                        <img src={imagePath} alt="cover" />
+            <div className="selected-album" tabIndex="0" onClick={handleOnClick}>
+                <div className="selected-album__inner">
+                    <figure className="selected-album__cover">
+                        <img src={imagePath} alt="cover" className="selected-album__cover__media" />
                     </figure>
-                    <span>
+                    <span className="selected-album__summary">
                         #{id+1}: {artist} - {song}, från "{title}" ({year})<br />
                     </span>
-                    <p>
+                    <p className="selected-album__description">
                         {description.split('\n\n').map(text => (
                             <React.Fragment>
                                 {text}
@@ -37,6 +37,6 @@ export default class Modal extends Component {
                     </p>
                 </div>
             </div>
-        )
+        );
     }
 }

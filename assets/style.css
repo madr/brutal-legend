@@ -1,8 +1,9 @@
+/* === Base === */
 body {
     background-color: #111;
     color: #aaa;
     font-size: large;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
     padding: 5rem 10rem;
 }
 
@@ -67,29 +68,33 @@ footer {
     right: 0;
 }
 
-article {
+/* === /Base === */
+/* === Helpers === */
+
+.blur {
+    filter: blur(25px);
+}
+
+/* === /Helpers === */
+/* === Albums === */
+
+.album {
     display: flex;
     align-items: center;
 }
 
-figure {
-    margin: 1rem;
-}
-
-article:hover,
-article:focus {
+.album:hover {
     background: #333;
     color: #fff;
     transform: scale(1.05, 1.05);
     transition: transform .4s linear;
 }
 
-article:hover img {
-    transform: scale(1.5, 1.5) translateX(-1.5rem);
-    transition: transform .2s linear;
+.album__cover {
+    margin: 1rem;
 }
 
-figure img {
+.album__cover__media {
     width: 10vw;
     height: 10vw;
     padding: 5px;
@@ -98,7 +103,24 @@ figure img {
     background-color: #000;
 }
 
-#selected-album > div {
+.album__cover__media:hover {
+    transform: scale(1.5, 1.5) translateX(-1.5rem);
+    transition: transform .2s linear;
+}
+
+@media (min-width: 600px) {
+    .albums {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        text-transform: uppercase;
+    }
+}
+
+/* === /Albums === */
+/* === Selected album === */
+
+.selected-album__inner {
     display: grid;
     max-width: 80%;
     transform: translateY(-3em);
@@ -106,27 +128,13 @@ figure img {
     grid-template-rows: 1fr 2fr; 
 }
 
-#selected-album figure {
+.selected-album__cover {
     grid-column: 1;
     grid-row: 1 / 3;
     margin: 0;
 }
 
-#selected-album span {
-    align-self: end;
-    text-transform: uppercase;
-    padding: 0 1rem;
-}
-
-#selected-album p {
-    color: #fff;
-    margin: 0;
-    font-size: 1.5rem;
-    align-self: start;
-    padding: 0 1rem;
-}
-
-#selected-album img {
+.selected-album__cover__media {
     width: 100%;
     padding: 0;
     border: 0;
@@ -134,15 +142,22 @@ figure img {
     object-fit: cover;
 }
 
-@media (min-width: 600px) {
-    #albums {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 10px;
-        text-transform: uppercase;
-    }
+.selected-album__summary {
+    align-self: end;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
 
-    #selected-album {
+.selected-album__description {
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+    align-self: start;
+    padding: 0 1rem;
+}    
+
+@media (min-width: 600px) {
+    .selected-album {
         position: fixed;
         top: 0;
         right: 0;
@@ -155,6 +170,4 @@ figure img {
     }
 }
 
-.blur {
-    filter: blur(25px);
-}
+/* === /Selected album === */

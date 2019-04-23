@@ -10,7 +10,7 @@ export default class AlbumList extends Component {
         } = this.props;
         const classNames = blurred ? 'blur' : ''
         return (
-            <div id="albums" className={classNames}>
+            <div className={"albums " + classNames}>
                 {albums.map(album => (
                     <Album
                         key={album.id}
