@@ -9,10 +9,6 @@ Also a project for learning CSS Grid layout, React, Redux and Redux-sagas.
 Install dependencies and start webpack watcher.
 
     npm install
-    npm run watch
-
-in another terminal, start a web server using python.
-
-    npm run serve
+    npm start
     
-Visit site on http://localhost:10667
+Visit site on http://localhost:8080
