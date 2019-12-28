@@ -15,7 +15,7 @@ export default class AlbumList extends Component {
                     <Album
                         key={album.id}
                         album={album}
-                        handleOnClick={handleOnClick} 
+                        handleOnClick={handleOnClick}
                     />
                 ))}
             </div>

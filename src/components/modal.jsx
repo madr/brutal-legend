@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 export default class Modal extends Component {
+    handleKeyPress(e, callback) {
+        alert("sdsdsd")
+        console.log(e.charCode)
+        callback();
+    }
+
     render() {
         const {
             id,
@@ -18,23 +24,21 @@ export default class Modal extends Component {
         const imagePath = `assets/covers/${img}`;
         const song = songs.join(', ');
         return (
-            <div className="selected-album" tabIndex="0" onClick={handleOnClick}>
+            <div className="selected-album"
+            tabIndex="0"
+            onClick={handleOnClick}
+            onKeyPress={e => this.handleKeyPress(e, handleOnClick)}>
                 <div className="selected-album__inner">
-                    <figure className="selected-album__cover">
-                        <img src={imagePath} alt="cover" className="selected-album__cover__media" />
-                    </figure>
                     <span className="selected-album__summary">
                         #{id+1}: {artist} - {song}, från "{title}" ({year})<br />
                     </span>
-                    <p className="selected-album__description">
+                    <div className="selected-album__description">
                         {description.split('\n\n').map(text => (
-                            <React.Fragment>
+                            <p key={text}>
                                 {text}
-                                <br />
-                                <br />
-                            </React.Fragment>
+                            </p>
                         ))}
-                    </p>
+                    </div>
                 </div>
             </div>
         );
