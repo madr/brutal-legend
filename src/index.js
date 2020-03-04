@@ -29,4 +29,4 @@ render(
     document.getElementById('brutal')
 );
 
-store.dispatch({ type: 'LOAD_ALBUMS', payload: { source: 'json/albums.json' }});
+store.dispatch({ type: 'LOAD_ALBUMS', payload: { source: './albums.json' }});

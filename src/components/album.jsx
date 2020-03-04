@@ -21,7 +21,7 @@ export default class Album extends Component {
             img,
             purchased_on,
         } = album;
-        const imagePath = `assets/covers/${img}`;
+        const imagePath = `./covers/${img}`;
         const song = songs.join(', ');
         return (
             <article className="album" tabIndex="0" role="button" onClick={() => handleOnClick(album)}>
