@@ -3,12 +3,17 @@ import React from "react";
 export default (props: Props) => {
     const { value, handleOnChange } = props;
     return (
-        <div hidden>
-            <label htmlFor="sortBy">Sortera efter</label>
+        <div>
+            <label htmlFor="sortBy" className="visuallyhidden">
+                Sortera efter
+            </label>
             <select
                 id="sortBy"
                 value={value}
-                onChange={evt => handleOnChange(evt.target.value)}
+                className="field"
+                onChange={(evt: { target: HTMLSelectElement }) =>
+                    handleOnChange(evt.target.value)
+                }
             >
                 <option value="id">Inköpsdatum</option>
                 <option value="artist">Artist</option>
@@ -20,5 +25,5 @@ export default (props: Props) => {
 
 type Props = {
     value: string;
-    handleOnChange: Function;
+    handleOnChange(sortKey: string): void;
 };

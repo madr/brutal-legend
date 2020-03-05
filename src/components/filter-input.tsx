@@ -7,7 +7,10 @@ export default (props: Props) => {
             <input
                 type="text"
                 value={value}
-                onChange={evt => handleOnChange(evt.target.value)}
+                className="field"
+                onChange={(evt: { target: HTMLInputElement }) =>
+                    handleOnChange(evt.target.value)
+                }
                 placeholder="Filtrera på år, artist, låt, skivtitel ..."
             />
         </div>
@@ -16,5 +19,5 @@ export default (props: Props) => {
 
 type Props = {
     value: string;
-    handleOnChange: Function;
+    handleOnChange(filterValue: string): void;
 };

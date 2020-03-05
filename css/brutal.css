@@ -3,7 +3,8 @@ body {
     background-color: #111;
     color: #aaa;
     font-size: large;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Arial, sans-serif;
     padding: 0;
     margin: 0 auto;
     max-width: 80em;
@@ -18,7 +19,8 @@ a:visited {
     text-decoration: line-through;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #fff;
 }
 
@@ -62,41 +64,53 @@ p:last-child {
     margin-bottom: 0;
 }
 
-input {
+/* === /Base === */
+/* === Field === */
+
+.field {
     background-color: #333;
     color: #fff;
     border-width: 0;
     border-radius: 5px;
     font-size: large;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-    padding: .5rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Arial, sans-serif;
+    padding: 0.5rem 1rem;
     display: block;
     width: 100%;
     box-sizing: border-box;
     margin-top: 0.5em;
 }
 
-input:hover {
+.field:hover {
     background-color: #444;
 }
 
-input:focus {
+.field:focus {
     background-color: #fff;
     color: #000;
 }
 
 @media (min-width: 500px) {
-    input {
-        min-width: 17em;
+    .field {
         margin-top: 0;
+    }
+
+    input.field {
+        min-width: 17em;
     }
 }
 
-/* === /Base === */
+/* === /Field === */
 /* === Helpers === */
 
 .blur {
     filter: blur(25px);
+}
+
+.visuallyhidden {
+    position: absolute;
+    left: -9999em;
 }
 
 /* === /Helpers === */
@@ -136,6 +150,7 @@ input:focus {
 @media (min-width: 500px) {
     .album__cover {
         margin: 0 0 0.5em;
+        width: 100%;
         padding-top: 0;
     }
 }
@@ -143,6 +158,7 @@ input:focus {
 @media (min-width: 1200px) {
     .album__cover {
         margin: 0 1em 0 0;
+        width: auto;
         padding-top: 0;
     }
 }
@@ -155,7 +171,7 @@ input:focus {
 
 .album__cover__media:after {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     right: 0;
     bottom: 0;
@@ -197,31 +213,51 @@ input:focus {
     right: 0;
     bottom: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .selected-album__inner {
-    display: flex;
-    height: 100%;
     overflow: auto;
+    border: 3px solid #a83;
+    background: black;
+    padding: 2em;
+    max-height: 80%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .selected-album__summary {
     text-transform: uppercase;
     padding: 0.5em;
-    background-color: #000;
     margin-bottom: 0.5em;
 }
 
 .selected-album__description {
     color: #fff;
-    padding: 0.5rem;
-    overflow: auto;
-    margin: 0;
+    padding: 0 0.5rem 2em;
+    margin: 0 auto;
     max-width: 40em;
-    background-color: #000;
+}
+
+.selected-album__cover {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .selected-album__cover {
+        display: block;
+        width: 75vh;
+        max-width: 900px;
+        height: auto;
+    }
+
+    .selected-album__media {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* === /Selected album === */

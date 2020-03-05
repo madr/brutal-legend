@@ -40,5 +40,5 @@ export default (props: Props) => {
 type Props = {
     key: number;
     album: Album;
-    handleOnClick: Function;
+    handleOnClick(album: Album): void;
 };

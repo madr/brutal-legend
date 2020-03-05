@@ -2,26 +2,49 @@ import React from "react";
 import { Album } from "../interfaces";
 
 export default (props: Props) => {
-    const handleKeyPress = (e: KeyboardEvent, callback: Function) => {
-        console.log(e.charCode);
-        callback();
+    const handleKeyPress = (
+        keyPressed: string,
+        albumId: number,
+        close: Function
+        //goto: Function
+    ) => {
+        if (keyPressed === "Escape") {
+            close();
+        }
+        // } else if (keyPressed === "ArrowRight") {
+        //     goto(albumId, 1);
+        // } else if (keyPressed === "ArrowLeft") {
+        //     goto(albumId, -1);
+        // }
     };
 
-    const { album, handleOnClick } = props;
+    const { album, close /*goto*/ } = props;
     const { id, artist, title, songs, year, img, description } = album;
+
     if (id === undefined) {
         return "";
     }
-    // const imagePath = `assets/covers/${img}`;
+
+    const imagePath = `./covers/${img}`;
     const song = songs.join(", ");
+
+    document.onkeyup = (e: KeyboardEvent) =>
+        handleKeyPress(e.key, album.id, close /*goto*/);
+
     return (
         <div
-            className="selected-album"
+            className="selected-album blurred"
             tabIndex={0}
-            onClick={() => handleOnClick()}
-            onKeyPress={e => handleKeyPress(e, handleOnClick)}
+            onClick={() => close()}
         >
             <div className="selected-album__inner">
+                <figure className="selected-album__cover">
+                    <img
+                        src={imagePath}
+                        alt="cover"
+                        className="selected-album__media"
+                    />
+                </figure>
                 <span className="selected-album__summary">
                     #{id + 1}: {artist} - {song}, från "{title}" ({year})
                     <br />
@@ -38,5 +61,6 @@ export default (props: Props) => {
 
 type Props = {
     album: Album;
-    handleOnClick(): void;
+    close(): void;
+    // goto(albumId: number, direction: number): void;
 };

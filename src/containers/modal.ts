@@ -8,7 +8,7 @@ const mapStateToProps = (state: State) => ({
 });
 
 const mapDispatchToProps = (dispatch: Function) => ({
-    handleOnClick: () => dispatch(unselectAlbum())
+    close: () => dispatch(unselectAlbum())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Modal);

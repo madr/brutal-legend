@@ -20,6 +20,6 @@ export default (props: Props) => {
 
 type Props = {
     albums: Array<interfaces.Album>;
-    handleOnClick: Function;
+    handleOnClick(album: interfaces.Album): void;
     blurred: boolean;
 };
