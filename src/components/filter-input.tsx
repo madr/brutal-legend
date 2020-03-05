@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props: FilterInput) => {
+export default (props: Props) => {
     const { value, handleOnChange } = props;
     return (
         <div>
@@ -14,7 +14,7 @@ export default (props: FilterInput) => {
     );
 };
 
-interface FilterInput {
+type Props = {
     value: string;
     handleOnChange: Function;
-}
+};

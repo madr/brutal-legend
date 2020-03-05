@@ -1,13 +1,13 @@
 import { SET_VISIBILITY_FILTER } from "../actions";
 
-interface VisibilityFilterAction {
+type Action = {
     type: string;
     payload: {
         filter: string;
     };
-}
+};
 
-export default (state: string = "", action: VisibilityFilterAction) => {
+export default (state: string = "", action: Action) => {
     switch (action.type) {
         case SET_VISIBILITY_FILTER:
             return action.payload.filter;

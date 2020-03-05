@@ -1,7 +1,7 @@
 import React from "react";
-import * as interfaces from "../interfaces";
+import { Album } from "../interfaces";
 
-export default (props: Album) => {
+export default (props: Props) => {
     const handleKeyPress = (e: KeyboardEvent, callback: Function) => {
         const SPACE_KEY = 32;
         const ENTER_KEY = 13;
@@ -37,7 +37,8 @@ export default (props: Album) => {
     );
 };
 
-interface Album {
-    album: interfaces.Album;
+type Props = {
+    key: number;
+    album: Album;
     handleOnClick: Function;
-}
+};

@@ -2,7 +2,7 @@ import React from "react";
 import Album from "./album";
 import * as interfaces from "../interfaces";
 
-export default (props: AlbumList) => {
+export default (props: Props) => {
     const { albums, handleOnClick, blurred } = props;
     const classNames = blurred ? "blur" : "";
     return (
@@ -18,8 +18,8 @@ export default (props: AlbumList) => {
     );
 };
 
-interface AlbumList {
+type Props = {
     albums: Array<interfaces.Album>;
     handleOnClick: Function;
     blurred: boolean;
-}
+};

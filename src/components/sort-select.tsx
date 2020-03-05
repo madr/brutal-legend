@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props: SortSelect) => {
+export default (props: Props) => {
     const { value, handleOnChange } = props;
     return (
         <div hidden>
@@ -18,7 +18,7 @@ export default (props: SortSelect) => {
     );
 };
 
-interface SortSelect {
+type Props = {
     value: string;
     handleOnChange: Function;
-}
+};

@@ -1,12 +1,7 @@
 import React from "react";
 import { Album } from "../interfaces";
 
-interface Modal {
-    album: Album;
-    handleOnClick: Function;
-}
-
-export default (props: Modal) => {
+export default (props: Props) => {
     const handleKeyPress = (e: KeyboardEvent, callback: Function) => {
         console.log(e.charCode);
         callback();
@@ -39,4 +34,9 @@ export default (props: Modal) => {
             </div>
         </div>
     );
+};
+
+type Props = {
+    album: Album;
+    handleOnClick(): void;
 };

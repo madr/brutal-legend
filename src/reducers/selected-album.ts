@@ -1,14 +1,14 @@
 import { SELECT_ALBUM, UNSELECT_ALBUM } from "../actions";
 import { Album } from "../interfaces";
 
-interface AlbumAction {
+type Action = {
     type: string;
     payload: {
         album: Album;
     };
-}
+};
 
-export default (state: Object = {}, action: AlbumAction) => {
+export default (state: Object = {}, action: Action) => {
     switch (action.type) {
         case SELECT_ALBUM:
             return action.payload.album;
