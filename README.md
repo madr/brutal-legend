@@ -1,6 +1,5 @@
 # BRÜTAL LEGEND
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VW88ofmfF0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/VW88ofmfF0w
 
 Progress visualisation of the quest to own a vinyl copy of all songs older than 1990 used in [Brütal Legend](https://en.wikipedia.org/wiki/Br%C3%BCtal_Legend), where possible.
 
