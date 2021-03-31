@@ -214,7 +214,55 @@
     ],
     "title": "\"Them\"",
     "year": 1988,
-    "description": "King Diamond startade som s\u00E5ngare i det danska pionj\u00E4rbandet <b>Mercyful Fate<\/b>, och har sedan 1980-talet haft en framg\u00E5ngsrik solokarri\u00E4r med sin mycket karakt\u00E4ristiska r\u00F6st med brett register. \"Them\" \u00E4r den f\u00F6rsta av tv\u00E5 konceptalbum om King och hans metalsjuka farmor av huset Amon.\r\n\r\nDet handm\u00E5lade omslaget \u00E4r snyggt och ber\u00E4ttar en historia i sig.",
+    "description": "King Diamond startade som s\u00E5ngare i det danska pionj\u00E4rbandet Mercyful Fate, och har sedan 1980-talet haft en framg\u00E5ngsrik solokarri\u00E4r med sin mycket karakt\u00E4ristiska r\u00F6st med brett register. \"Them\" \u00E4r den f\u00F6rsta av tv\u00E5 konceptalbum om King och hans metalsjuka farmor av huset Amon.\r\n\r\nDet handm\u00E5lade omslaget \u00E4r snyggt och ber\u00E4ttar en historia i sig.",
     "img": "17.jpg"
+  },
+  {
+    "id": 18,
+    "purchased_on": "2021-02-21",
+    "artist": "UFO",
+    "songs": [
+      "Rock Bottom"
+    ],
+    "title": "Phenomenom",
+    "year": 1974,
+    "description": "UFO är ett brittiskt band bildat 1968 i London. De började som ett rockband, och hann vara en del av NWOBHM-vågen innan de började ha uppehåll i turnerande och skivinspelningar.\n\n\"Rock Bottom\" kommer från deras tredje skiva, som är den första att ha Michael Schenker som gitarrist.",
+    "img": "18.jpg"
+  },
+  {
+    "id": 19,
+    "purchased_on": "2021-02-23",
+    "artist": "Girlschool",
+    "songs": [
+      "Bomber"
+    ],
+    "title": "St. Valentine's Day Massacre",
+    "year": 1981,
+    "description": "\"Bomber\" är en låt skriven av Motörhead, och denna version är från samarbetet Headgirl som bestod av bandmedlemmar från Motörhead och Girlschool: de senare ett NWOBHM-band som bildades 1978, turnérade mer än skrev material och är det äldsta fortfarande aktiva bandet som enbart består av kvinnor.",
+    "img": "19.jpg"
+  },
+  {
+    "id": 20,
+    "purchased_on": "2021-02-28",
+    "artist": "Scorpions",
+    "songs": [
+      "Holiday"
+    ],
+    "title": "Lovedrive",
+    "year": 1979,
+    "description": "Scorpions bildades så tidigt som 1965, i Hanover, Tyskland, och hade sin storhetstid 1978–1992. \"Holiday\" är en avslutande ballad som har en viktig plats i BRUTAL LEGEND cinematics.\n\nOmslaget är anstötligt och sexistiskt, som Hårdrock tenderade till att eftersträva i slutet på 1970-talet.",
+    "img": "20.jpg"
+  },
+  {
+    "id": 21,
+    "purchased_on": "2021-03-25",
+    "artist": "Accept",
+    "songs": [
+      "Fast as a Shark"
+    ],
+    "title": "Restless and Wild",
+    "year": 1982,
+    "description": "Tyska Accept är pionjärer inom Speed Metal, Trash Metal och Power Metal, och bildades 1976 i Solingen, Tyskland. Den fjärde skivan Restless and Wild är från bandets storhetstid.\n\nOmslaget är tidslöst och ikoniskt, med sina 2 brinnande Flying V-gitarrer.",
+    "img": "21.jpg"
   }
 ]

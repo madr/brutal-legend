@@ -1,7 +1,7 @@
 {
     "scripts": {
         "start": "cross-env NODE_ENV=development parcel index.html --public-url / --out-dir _build",
-        "build": "cross-env NODE_ENV=production parcel build index.html --public-url /urban-enigma/ --out-dir docs --no-source-maps --no-content-hash",
+        "build": "cross-env NODE_ENV=production parcel build index.html --public-url /bl/ --out-dir docs --no-source-maps --no-content-hash",
         "lint": "cross-env NODE_ENV=development prettier --check src/**/*"
     },
     "devDependencies": {
