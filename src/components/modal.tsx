@@ -46,7 +46,7 @@ export default (props: Props) => {
                     />
                 </figure>
                 <span className="selected-album__summary">
-                    #{id + 1}: {artist} - {song}, från "{title}" ({year})
+                    #{("00" + id).substr(-2, 2)}: {artist} - {song}, från "{title}" ({year})
                     <br />
                 </span>
                 <div className="selected-album__description">

@@ -30,7 +30,7 @@ export default (props: Props) => {
                 />
             </figure>
             <span>
-                #{id + 1}: {artist} - {song}, från "{title}" ({year})<br />
+                #{("00" + id).substr(-2, 2)}: {artist} - {song}, från "{title}" ({year})<br />
                 <small>✔️ {purchased_on}</small>
             </span>
         </article>

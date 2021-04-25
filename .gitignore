@@ -10,3 +10,5 @@ npm-debug.log
 .cache
 _build
 .vscode
+
+docs
