@@ -23,7 +23,8 @@
         "react-dom": "^16.8.5",
         "react-redux": "^6.0.1",
         "redux": "^4.0.1",
-        "redux-saga": "^1.0.2"
+        "redux-saga": "^1.0.2",
+        "symbol-observable": "^4.0.0"
     },
     "postcss": {
         "modules": false,
