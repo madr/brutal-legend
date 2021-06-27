@@ -12,3 +12,6 @@ _build
 .vscode
 
 docs
+
+static/albums.json
+static/covers

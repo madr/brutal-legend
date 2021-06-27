@@ -1,0 +1,68 @@
+[
+    {
+        "id": 6,
+        "img": "05.jpg",
+        "title": "Death or Glory",
+        "artist": "Running Wild",
+        "album": "Death or Glory",
+        "year": 1989,
+        "purchased_on": "2016-04-09",
+        "description": "",
+        "songs": ["Riding the Storm"]
+    },
+    {
+        "id": 5,
+        "img": "04.jpg",
+        "title": "Blizzard of Ozz",
+        "artist": "Ozzy Osbourne",
+        "album": "Blizzard of Ozz",
+        "year": 1980,
+        "purchased_on": "2016-04-05",
+        "description": "",
+        "songs": ["Mr Crowley"]
+    },
+    {
+        "id": 4,
+        "img": "03.jpg",
+        "title": "Destroyer",
+        "artist": "KISS",
+        "album": "Destroyer",
+        "year": 1976,
+        "purchased_on": "2016-03-19",
+        "description": "",
+        "songs": ["God of Thunder"]
+    },
+    {
+        "id": 3,
+        "img": "02.jpg",
+        "title": "Battle Cry",
+        "artist": "Omen",
+        "album": "Battle Cry",
+        "year": 1984,
+        "purchased_on": "2016-03-12",
+        "description": "",
+        "songs": ["The Axeman"]
+    },
+    {
+        "id": 2,
+        "img": "01.jpg",
+        "title": "O.F.R.",
+        "artist": "Nitro",
+        "album": "O.F.R.",
+        "year": 1989,
+        "purchased_on": "2016-01-31",
+        "description": "",
+        "songs": ["Machine Gunn Eddie"]
+    },
+    {
+        "id": 1,
+        "img": "00.jpg",
+        "title": "Refuge Denied",
+        "artist": "Sanctuary",
+        "album": "Refuge Denied",
+        "year": 1987,
+        "purchased_on": "2016-01-24",
+        "description": "",
+        "songs": ["Battle Angels"]
+    }
+]
